@@ -1,0 +1,9 @@
+{
+  "name": "logbuch",
+  "label": "Logbuch",
+  "description": "Interactive sessions ranked by business value",
+  "icon": "BookOpen",
+  "version": "0.1.0",
+  "tab": { "path": "/logbuch", "hidden": true },
+  "api": "plugin_api.py"
+}

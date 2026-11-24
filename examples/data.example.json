@@ -1,0 +1,45 @@
+{
+  "topics": {
+    "SHOP": "Storefront and checkout",
+    "BILL": "Billing and invoicing",
+    "INFRA": "Infrastructure and deployments",
+    "DOCS": "Docs, tickets and planning",
+    "REVIEW": "Code review and repo hygiene",
+    "PERSONAL": "Personal and miscellaneous"
+  },
+  "loose_end": "not processed|Operation interrupted|timed out|need(s)? your go|waiting on you|still open|is still to do|none is merged|not merged|is a Draft|decisions? (are )?(still )?(waiting|open)",
+  "open_states": {
+    "waiting_go": "need(s)? your go|waiting on you|decisions? (are )?(still )?(waiting|open)",
+    "not_merged": "none is merged|not merged|is a Draft",
+    "todo": "still open|is still to do"
+  },
+  "rubric": "3 = a production fix or a request from others delivered; 2 = team enablement or a decision on shared systems; 1 = indirect value; 0 = personal.",
+  "rules": [
+    {
+      "name": "path:storefront",
+      "field": "path",
+      "pattern": "/src/storefront(-wt)?(/|$)",
+      "topic": "SHOP",
+      "value": {"mr_calls_at_least": 5, "value": 3, "otherwise": 2}
+    },
+    {
+      "name": "path:billing",
+      "field": "path",
+      "pattern": "/src/billing(/|$)",
+      "topic": "BILL",
+      "value": 3
+    },
+    {
+      "name": "ticket:BILLING",
+      "field": "text",
+      "pattern": "\\bBILLING-\\d+",
+      "topic": "BILL"
+    },
+    {
+      "name": "host:build",
+      "field": "text",
+      "pattern": "\\bbuild-\\d+\\.example\\.org",
+      "topic": "INFRA"
+    }
+  ]
+}

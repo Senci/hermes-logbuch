@@ -1,0 +1,32 @@
+name: logbuch
+version: "0.1.0"
+manifest_version: 2
+description: Value-ranked view of the profile's interactive Hermes sessions in Hermes Desktop, with rule, model and manual labels, open loose ends and a weekly Markdown digest.
+author: Senad Ličina
+license: MIT
+requires_hermes: ">=0.21.5"
+tags: [sessions, desktop, triage]
+provides_tools: []
+provides_hooks: []
+requires_env: []
+config_schema:
+  data_file:
+    type: string
+    default: ""
+    description: Path of the data file (topics, rules, phrases, value rubric). Empty means $HERMES_HOME/logbuch/data.json when it exists, else the built-in neutral default.
+  classify_model:
+    type: string
+    default: claude-haiku-5-5
+    description: Model that POST /classify labels sessions with.
+  provider:
+    type: string
+    default: anthropic
+    description: Hermes provider for that model.
+  profile:
+    type: string
+    default: default
+    description: Hermes profile the classify call runs under.
+  classify_limit:
+    type: integer
+    default: 20
+    description: Sessions labelled per POST /classify when the request names no limit (at most 50).
