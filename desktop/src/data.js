@@ -1,7 +1,7 @@
 // ctx.rest follows the active gateway on every call, so connection and profile are in every query key.
 import { captureGatewayFileDownload, host, queryClient, useQuery } from '@hermes/plugin-sdk'
 
-import { useBackend, useLiveQuery } from './kit/live.js'
+import { useBackend, useLiveQuery } from 'hermes-plugin-ui-kit/live.js'
 
 import { ID, POLL_MS, STALE_MS } from './model.js'
 import { api } from './state.js'

@@ -2,7 +2,7 @@
 import { KEYBINDS_AREA, PALETTE_AREA, PANES_AREA, ROUTES_AREA, SESSION_ROW_AREAS, SIDEBAR_NAV_AREA } from "@hermes/plugin-sdk";
 import { createElement as h3 } from "react";
 
-// desktop/src/kit/theme.js
+// .build/node_modules/hermes-plugin-ui-kit/src/theme.js
 var ui = (name) => `var(--ui-${name})`;
 var TONE = {
   text: ui("text-primary"),
@@ -110,7 +110,7 @@ var CSS = `
 // desktop/src/data.js
 import { captureGatewayFileDownload, host as host2, queryClient as queryClient2, useQuery as useQuery2 } from "@hermes/plugin-sdk";
 
-// desktop/src/kit/live.js
+// .build/node_modules/hermes-plugin-ui-kit/src/live.js
 import { atom, host, queryClient, useQuery, useValue } from "@hermes/plugin-sdk";
 var POLL_FLOOR_MS = 15e3;
 var LIVE_SAFETY_MS = 6e4;

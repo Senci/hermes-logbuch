@@ -102,4 +102,4 @@ The list polls every 60 seconds. Connection and profile are part of every query,
 
 ## Development
 
-Source is `desktop/src/`, with its own copy of the UI kit in `desktop/src/kit/`; `desktop/plugin.js` is built from it with SDK and react external: `sh scripts/rebuild.sh` in the plugin directory (needs node and npm; it installs the pinned esbuild into a cache directory), then commit both. `node tests/desktop.test.mjs` runs the tests of the pure modules (`logic.js`, `model.js`).
+Source is `desktop/src/`, and the [hermes-plugin-ui-kit](https://www.npmjs.com/package/hermes-plugin-ui-kit) package; `desktop/plugin.js` is built from it with SDK and react external: `sh scripts/rebuild.sh` in the plugin directory (needs node and npm; it installs the pinned esbuild and kit into the gitignored `.build/`), then commit both. `node tests/desktop.test.mjs` runs the tests of the pure modules (`logic.js`, `model.js`).
