@@ -3,7 +3,7 @@
   "label": "Logbuch",
   "description": "Interactive sessions ranked by business value",
   "icon": "BookOpen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "tab": { "path": "/logbuch", "hidden": true },
   "api": "plugin_api.py"
 }

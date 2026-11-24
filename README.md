@@ -1,5 +1,7 @@
 # Logbuch
 
+![Logbuch](docs/assets/cover.jpg)
+
 A value-ranked list of your real-work Hermes sessions. Interactive sessions (desktop and CLI) of the profile the backend runs in, compression chains folded into their root, grouped by topic and ranked by business value, then by shipped output (commit calls plus MR calls). The tab is called "Logbuch" on purpose.
 
 ## Install

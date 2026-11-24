@@ -1,5 +1,5 @@
 name: logbuch
-version: "0.1.0"
+version: "0.1.1"
 manifest_version: 2
 description: Value-ranked view of the profile's interactive Hermes sessions in Hermes Desktop, with rule, model and manual labels, open loose ends and a weekly Markdown digest.
 author: Senad Ličina
