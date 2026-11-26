@@ -1,6 +1,6 @@
-// Source of desktop/plugin.js (`sh scripts/rebuild.sh`, CI job logbuch:self-contained). Data comes from
-// dashboard/plugin_api.py through ctx.rest; labels go back through PUT /labels/{id}, nothing here writes chat text (S4).
-// Every named @hermes/plugin-sdk import must exist in the oldest supported host SDK (tools/build/sdk-exports.mjs).
+// Source of desktop/plugin.js (`sh scripts/rebuild.sh`). Data comes from dashboard/plugin_api.py through ctx.rest; labels
+// go back through PUT /labels/{id}, nothing here writes chat text.
+// Every named @hermes/plugin-sdk import must exist in the SDK of the oldest supported Hermes (v2026.9.24).
 
 import { KEYBINDS_AREA, PALETTE_AREA, PANES_AREA, ROUTES_AREA, SESSION_ROW_AREAS, SIDEBAR_NAV_AREA } from '@hermes/plugin-sdk'
 import { createElement as h } from 'react'
